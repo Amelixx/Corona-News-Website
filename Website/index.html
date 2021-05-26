@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaNews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <link rel="shortcut icon" href="./images/logo.png">
+
+    <script src="./js/index.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <!-- navbar -->
+    <nav>
+        <img id="logo" src="./images/logo.png" alt="CoronaNews">
+        <ul id="nav-list">
+            <a class="nav-link" href="" style="box-shadow:inset 2px -4px 0px -2px #c97171"><li class="nav-button">Home</li></a>
+            <a class="nav-link" href="world.html"><li class="nav-button">World</li></a>
+            <a class="nav-link" href="countries.html"><li class="nav-button">Countries</li></a>
+            <a class="nav-link" href="history.html"><li class="nav-button">History</li></a>
+            <a class="nav-link" href="states.html"><li class="nav-button">US States</li></a>
+            <a class="nav-link" href="bot.html"><li class="nav-button">Discord Bot</li></a>
+            <a class="nav-link right" href="login.html"><li class="nav-button">Login</li></a>
+        </ul>
+    </nav>
+
+    <!-- Quick-information container -->
+    <div class="global-container">
+        <h1 class="global-cases"></h1>
+        <h2 class="global-recovered"></h2>
+        <h2 class="global-deaths"></h2>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-container">
+        <canvas id="global-case-history"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="most-affected-countries-30-days"></canvas>
+    </div>
+</body>
+</html>

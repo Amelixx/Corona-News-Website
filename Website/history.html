@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaNews - History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="./js/history.js"></script>
+
+    <link rel="shortcut icon" href="./images/logo.png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img id="logo" src="./images/logo.png" alt="CoronaNews">
+        <ul id="nav-list">
+            <a class="nav-link" href="./"><li class="nav-button">Home</li></a>
+            <a class="nav-link" href="world.html"><li class="nav-button">World</li></a>
+            <a class="nav-link" href="countries.html"><li class="nav-button">Countries</li></a>
+            <a class="nav-link" href="" style="box-shadow:inset 2px -4px 0px -2px #c97171"><li class="nav-button">History</li></a>
+            <a class="nav-link" href="states.html"><li class="nav-button">US States</li></a>
+            <a class="nav-link" href="bot.html"><li class="nav-button">Discord Bot</li></a>
+            <a class="nav-link right" href="login.html"><li class="nav-button">Login</li></a>
+        </ul>
+    </nav>
+
+    <div class="historySearch">
+        <div class="search">
+            <h3>Date</h3>
+            <input id="searchBox" type="date">
+        </div>
+        <div class="search">
+            <h3>Search</h3>
+            <input id="searchBox" placeholder="Country name..." autofocus>
+        </div>
+    </div>
+
+    <div class="infoContainer">
+        <h4 class="infoTitle">On 21st November, 2020..</h4>
+
+        <p>Cases globally were at 121,060.<br>Death toll: 10,452<br>There were 43,231 new cases that day, and 243 new deaths.<br>United States had the highest number of infections, with 29,534,231 cases.</p><br>
+
+        <h4 class="infoTitle">United Kingdom on 21st November, 2020..</h4>
+
+        <div class="card" id="history"><div class="cardHeader"><h1 class="cardTitle">United Kingdom</h1><img class="cardFlag" src="https://disease.sh/assets/img/flags/gb.png"></div>
+        <p class="cardInfo">Cases: 4,163,085<br>Deaths: 122,415<br>Recovered: 2,779,169<br>Active: 1,261,501<br>Critical: 2,047<br>Population: 68,120,388<br>6.11% Infected<br>0.18% Dead</p></div></div>
+    </div>
+</body>
+</html>

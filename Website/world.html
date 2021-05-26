@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaNews - World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./js/world.js"></script>
+
+    <link rel="shortcut icon" href="./images/logo.png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img id="logo" src="./images/logo.png" alt="CoronaNews">
+        <ul id="nav-list">
+            <a class="nav-link" href="./"><li class="nav-button">Home</li></a>
+            <a class="nav-link" href="" style="box-shadow:inset 2px -4px 0px -2px #c97171"><li class="nav-button">World</li></a>
+            <a class="nav-link" href="countries.html"><li class="nav-button">Countries</li></a>
+            <a class="nav-link" href="history.html"><li class="nav-button">History</li></a>
+            <a class="nav-link" href="states.html"><li class="nav-button">US States</li></a>
+            <a class="nav-link" href="bot.html"><li class="nav-button">Discord Bot</li></a>
+            <a class="nav-link right" href="login.html"><li class="nav-button">Login</li></a>
+        </ul>
+    </nav>
+    <div id="world-stats">
+        <div class="world-stat">
+            <h2 id="cases"></h2>
+            <p class="today" id="casesToday"></p>
+        </div>
+        <div class="world-stat">
+            <h2 id="deaths"></h2>
+            <p class="today" id="deathsToday"></p>
+        </div>
+        <div class="world-stat">
+            <h2 id="tests"></h2>
+        </div>
+    </div>
+    <h3 id="countries-affected"></h3>
+
+    <div style="display: flex; justify-content: center;">
+        <div id="country-table"></div>
+    </div>
+    
+    <footer></footer>
+</body>
+</html>
